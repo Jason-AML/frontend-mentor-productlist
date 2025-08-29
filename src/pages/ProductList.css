@@ -1,0 +1,18 @@
+.products {
+  width: 65%;
+  margin-left: 8%;
+}
+.products h2 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.container-product-list {
+  display: flex;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
