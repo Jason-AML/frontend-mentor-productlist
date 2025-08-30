@@ -1,5 +1,5 @@
 .products {
-  width: 65%;
+  width: 60%;
   margin-left: 8%;
 }
 .products h2 {
@@ -10,9 +10,18 @@
 }
 .container-product-list {
   display: flex;
+  background-color: hsl(13, 31%, 94%);
 }
 .list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  /* En pantallas medianas, reducimos el ancho de productos */
+  .container-product-list {
+    display: flex;
+    flex-direction: column;
+  }
 }
