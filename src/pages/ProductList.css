@@ -17,11 +17,47 @@
   flex-wrap: wrap;
   gap: 20px;
 }
-
-@media (max-width: 1024px) {
-  /* En pantallas medianas, reducimos el ancho de productos */
+.list {
+  display: flex;
+}
+@media (max-width: 1046px) {
+  .card {
+    width: 40%;
+  }
+}
+@media (max-width: 641px) {
   .container-product-list {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .products {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    width: 80%;
+    align-items: center;
+    margin: 30px;
+  }
+  .container-cardshop {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .container-cardshop {
+    display: none;
+  }
+  .products {
+    margin-left: 0;
+    width: 100%;
+    margin: 30px;
+  }
+}
+
+@media (max-width: 1541px) {
+  .container-cardshop {
+    left: 60%;
   }
 }

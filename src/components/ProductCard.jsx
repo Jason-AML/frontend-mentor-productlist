@@ -6,7 +6,7 @@ export const ProductCard = ({ product, onAdd }) => {
     <li className="card">
       <div className="card-img">
         <img src={product.image.thumbnail} alt="" className="product-img" />
-        <button onClick={() => onAdd(product)}>
+        <button onClick={() => onAdd(product)} className="btn-addcard">
           <img
             src={iconaddcar}
             alt=""
